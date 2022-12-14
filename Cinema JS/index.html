@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bioskop</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+	<h1>Bioskop</h1>
+
+	<div class="container">
+		<div class="items">
+			<h2>Filmovi i serije</h2>
+
+			<div class="single-item">
+				<img src="img/cukur.png" class="slika">
+				<div class="si-content" style="float: left;">
+					<h3>Çukur</h3>
+					<p class="price">$10</p>
+				</div>
+				<div class="opis">A dangerous neighborhood, "The Pit", ran by a noble mafia family called Kocovali. When the family is in the danger of losing the control of The Pit, their youngest son now must come back to his home, where he could never escape from.</div>
+				<div class="div-jedan"><img src="img/4zvezde.png" class="zvezde"></div>
+				<div class="actions">
+					<input type="number" name="quantity" value="0" min="0">
+					<button onclick="addToCart(this)">Gledaj</button>
+				</div>
+			</div>
+
+			<div class="single-item">
+				<img src="img/bb.png" class="slika">
+				<div class="si-content" style="float: left;">
+					<h3>Breaking Bad</h3>
+					<p class="price">$20</p>
+				</div>
+				<div class="opis">A high school chemistry teacher diagnosed with inoperable lung cancer turns to manufacturing and selling methamphetamine in order to secure his family's future</div>
+				<div><img src="img/5zvezde.png" class="zvezde"></div>
+
+				<div class="actions">
+					<input type="number" name="quantity" value="0" min="0">
+					<button onclick="addToCart(this)">Gledaj</button>
+				</div>
+			</div>
+
+			<div class="single-item">
+				<img src="img/harry.png" class="slika">
+				<div class="si-content" style="float: left;">
+					<h3>Harry Potter</h3>
+					<p class="price">$30</p>
+				</div>
+				<div class="opis">An orphaned boy enrolls in a school of wizardry, where he learns the truth about himself, his family and the terrible evil that haunts the magical world.</div>
+				<div><img src="img/3ipozvezde.png" class="zvezde"></div>
+				<div class="actions">
+					<input type="number" name="quantity" value="0" min="0">
+					<button onclick="addToCart(this)">Gledaj</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="cart">
+			<h2>Korpa</h2>
+			
+			<div class="cart-items"></div>
+
+			<div class="total"></div>
+		</div>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+</html>
